@@ -16,8 +16,7 @@ const userSchema = new Schema({
     }, 
 
     photo: {
-        type: String,
-        required: true,
+        type: String
     },
     dept: {
         type: String,
@@ -73,7 +72,7 @@ const userSchema = new Schema({
 
             RegisteredDate:{
                 type:Date,
-                default: Date.now()
+                default: new Date()
 
             },
 
